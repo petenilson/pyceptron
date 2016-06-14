@@ -33,7 +33,7 @@ class Perceptron(object):
         the weights and bias based on how much the answer
         differs from the correct answer
         """
-        self.weights = [self.weights[i] + inputs[i]*delta*learning_rate                         for i in range(len(self.weights))]
+        self.weights = [self.weights[i] + inputs[i]*delta*learning_rate for i in range(len(self.weights))]
         self.bias += delta*learning_rate
 
     def process(self, inputs):
@@ -156,14 +156,5 @@ if __name__ == '__main__':
     print 'Trained our perceptron over {} iterations'.format(iterations)
     print 'using a learning rate of {}'.format(learning_rate)
     print '{}% of the answers were correct'.format(success)
-
-
-# In[ ]:
-
-
-
-
-# In[ ]:
-
 
 
